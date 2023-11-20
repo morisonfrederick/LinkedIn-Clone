@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  background-color: rgb(244,242,238);
+}
+nav .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 12rem;
+  background-color: rgb(255,255,255);
+}
+nav .wrapper .left,
+nav .wrapper .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255,255,255);
+}
+nav .wrapper .left{
+  gap: .5rem;
+  
+}
+nav .wrapper .left .search{
+  background-color: #EDF3F8;
+  padding: 0.4rem 1rem;
+
+} 
+nav .wrapper .left .search input{
+  background: transparent;
+  border: none;
+}
+nav .wrapper .right{
+  gap: 1.5rem;
+}
+
+nav .wrapper .logo i{
+  color: #0a66c2;
+  font-size: 2.8rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+nav .wrapper .left .logo_text{
+  color: #0a66c2;
+  font-size: 3rem;
+  margin-right: 0;
+  padding-right: 0;
+}
+nav .wrapper .right .home,
+nav .wrapper .right .myNetworks,
+nav .wrapper .right .jobs,
+nav .wrapper .right .messaging,
+nav .wrapper .right .notification,
+nav .wrapper .right .user,
+nav .wrapper .right .bussiness
+
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  color: gray;
+  cursor: pointer;
+  background-color: rgb(255,255,255);
+}
+nav .wrapper .right .bussiness{
+  border-left:2px solid grey;
+  padding-left: 5px;
+}
+nav .wrapper .right .home:hover,
+nav .wrapper .right .myNetworks:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .messaging:hover,
+nav .wrapper .right .notification:hover,
+nav .wrapper .right .user:hover,
+nav .wrapper .right .bussiness:hover
+
+{
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;*/
+  color: #000;
+}
+
+nav .wrapper .right .home i,
+nav .wrapper .right .myNetworks i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .messaging i,
+nav .wrapper .right .notification i,
+nav .wrapper .right .user i,
+nav .wrapper .right .bussiness i{ 
+  font-size: 1.5rem;
+ background-color: rgb(255,255,255);
+}
+
+nav .wrapper .right .home h6,
+nav .wrapper .right .myNetworks h6,
+nav .wrapper .right .jobs h6,
+nav .wrapper .right .messaging h6,
+nav .wrapper .right .notification h6,
+nav .wrapper .right .user h6,
+nav .wrapper .right .bussiness h6,
+nav .wrapper .right .user .down,
+nav .wrapper .right .bussiness .workDown{
+  display: flex;
+  gap: .5rem;
+  background-color: rgb(255,255,255);
+}
+nav .wrapper .right .user .down i,
+nav .wrapper .right .bussiness .workDown i{
+  font-size: .8rem;
+  
+}
+nav .wrapper .right .user i:first-child{
+  background-color: aqua;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+nav .wrapper .right .tryPremium a{
+  display: flex;
+  color: #915907;
+  font-size: 0.8rem;width: 7rem;
+  text-align: center;
+  background-color: rgb(255,255,255);
+
+}
+nav .wrapper .right .tryPremium a:hover{
+  color: #342103;
+}
+.container{
+  display: grid;
+  grid-template-columns: 225px 555px 302px;
+  width: 60%;
+  gap: 1.5rem;
+  margin: 1rem 13rem;
+}
+/*-------------------side bar----------------*/
+aside{
+  height: auto;
+}
+aside .sidebar,
+.main_content,
+.right_side,
+.groups_events{
+  background-color: white;
+  border-radius: .5rem;
+
+}
+aside .top{
+  width: 100%;
+  height: 56.25px;
+  background-color: rgb(160,180,183);
+  border-radius: 0.5rem .5rem 0 0;
+}
+aside img{
+  position: relative;
+  top: -30px;
+  left: 75px;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 1px solid white;
+
+}
+aside .profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+}
+aside .sidebar h1,
+aside .sidebar p
+{
+  background: transparent;
+}
+aside .sidebar h1{
+  font-size: medium;
+  color: #191919;
+}
+aside .sidebar h1:hover{
+  text-decoration: underline;
+  text-decoration-color: #0a66c2;
+}
+aside .sidebar{
+  font-size: small;
+  margin-bottom: 10px;
+  color: #666666;
+}
+hr{
+ border: none;
+ height: 0.5px;
+ background-color: rgb(244,242,238);
+ 
+}
+aside .connection,
+aside .connection .connection_top
+{
+  background: transparent;
+  margin-top: 10px;
+}
+aside .connection{
+  margin: 0 10px;
+}
+aside .connection_top{
+  display: flex;
+  justify-content: space-between;
+}
+aside .connect_two{
+  color: #0a66c2;
+}
+aside .grow_network{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+aside .strengthen,
+aside .try_premium,
+aside .try_premium i{
+  background: transparent;
+}
+aside .strengthen{
+  margin: 10px;
+}
+aside .try_premium{
+  display: flex;
+  align-items: center;
+}
+aside .try_premium p{
+  margin-left: 10px;
+  color: #000;
+  text-decoration: underline;
+}
+aside .myitem{
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px;
+}
+/*-------------------------------side bar 2----------------------*/
+.sidebar .group,
+.sidebar .event,
+.sidebar .events,
+.sidebar .followed{
+  color: #0a66c2;
+}
+#strengthen{
+  margin-left: 50px;
+}
+/*-------------------------------main content---------------------*/
+.main_content{
+  height: 120px;
+  margin-bottom: 10px;
+}
+.main_content .start_post{
+  background: transparent;
+}
+.main_content .start_post  img{
+  border-radius: 50%;
+  height: 50px;
+  margin-left: 10px;
+}
+.start_post{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.start_post input{
+  border-radius: 20px;
+  height: 50px;
+  margin-left: 10px;
+  width: 457px; ;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 10px;
+
+}
+.media{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  padding: 0 40px;
+  gap: 90px;
+}
+.media-one{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  gap: 10px;
+  text-decoration: none;
+}
+.media-one p{
+  background: transparent;
+  color: #00000099;
+
+}
+#one{
+  color: blue;
+}
+#two{
+  color: orange;
+}
+#three{
+  color: gold;
+}
+/*-------------------------main content two--------------------*/
+#start_post{
+  display: flex;
+  gap: 10px;
+}
+#main_content{
+  height: 550px;
+}
+.name-details{
+  background: transparent;
+}
+.name-details h1{
+  background: transparent;
+  font-size: 14px;
+  color: #000000E6;
+}
+.name-details p{
+  background: transparent;
+  color: #00000099;
+}
+.name-details p span{
+  background: transparent;
+  color: #00000099;
+}
+.close div{
+  background: transparent;
+  color: #00000099;
+}
+.close{
+  display: flex;
+  gap: 10px;
+  background: transparent;
+  margin-left: 100px;
+}
+.message{
+  background: transparent;
+  padding: 10px;
+  color: #00000099;
+}
+.see-more{
+  background: transparent;
+  margin-left: 450px;
+  color: #00000099;
+}
+.first-image{
+  width: 555px;
+  height: auto;
+}
+#media i{
+  color: #00000099;
+  background: transparent;
+}
+#media{
+  padding-top: 0 10px;
+}
+/*------------------------right side----------------------*/
+.right_side{
+  height: 450px;
+}
+.news{
+  display: flex;
+  gap: 150px;
+  padding: 10px;
+  background: transparent;
+}
+.news p{
+  background: transparent;
+}
+.news span{
+  background: transparent;
+}
+.news-one{
+  padding: 10px;
+  background: transparent;
+}
+.news-one p{
+  background: transparent;
+}
+.news-one p span{
+  background: transparent;
+}
+.top-news{
+  color: #00000099;
+  margin-left: 10px;
+}
+.show-more{
+  display: flex;
+  gap: 10px;
+  background: transparent;
+  padding: 10px;
+  align-items: center;
+}
+.show-more p{
+  background: transparent;
+}
+.show-more i{
+  background: transparent;
+}
